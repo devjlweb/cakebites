@@ -8,8 +8,9 @@
 
 h1 {
   font-size: 3.125rem;
+  font-weight: 700;
   line-height: 4rem;
-  color: #222;
+  color: #005B47;
 }
 
 h2 {
@@ -56,9 +57,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 25px 80px 10px;
   background: #E5ADB6;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #header a {
@@ -84,7 +89,7 @@ body {
 
 #navbar li {
   list-style: none;
-  padding: 0 20px;
+  padding: 0px 20px;
   position: relative;
 }
 
@@ -92,13 +97,13 @@ body {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #C3FCF1;
+  color: rgba(255,255,255,.55);
   transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #005B47;
+  color: #C3FCF1;
 }
 
 #navbar li a.active::after,
@@ -112,6 +117,53 @@ body {
   left: 20px;
 }
 
+
+
+/*               Home Page               */
+#hero {
+  background: url("img/bgHero.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 80px 20px;
+}
+
+.heroLeft h1{
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #005B47;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.heroLeft p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: rgb(195 , 252, 241);
+}
+
+.heroLeft {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.heroRight {
+  width: 50%;
+}
+
+#hero button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  display: inline-block;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+}
 
 
 /*               Shop               */
